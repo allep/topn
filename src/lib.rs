@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 pub struct Config<'a> {
     input_file: &'a str,
     num_words: usize,
@@ -5,6 +7,16 @@ pub struct Config<'a> {
 
 impl<'a> Config<'a> {
     pub fn build(params: &'a [String]) -> Result<Config<'a>, &'static str> {
+        todo!();
+    }
+}
+
+struct TopNComputer<'a> {
+    words: HashMap<&'a str, usize>,
+}
+
+impl<'a> TopNComputer<'a> {
+    fn build(input_file: &'a str, num_words: usize) -> Result<TopNComputer<'a>, &'static str> {
         todo!();
     }
 }
