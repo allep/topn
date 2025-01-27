@@ -13,10 +13,11 @@ impl<'a> Config<'a> {
 
 struct TopNComputer<'a> {
     words: HashMap<&'a str, usize>,
+    max_words: usize,
 }
 
 impl<'a> TopNComputer<'a> {
-    fn build(input_file: &'a str, num_words: usize) -> Result<TopNComputer<'a>, &'static str> {
+    fn build(raw_content: &'a str, num_words: usize) -> Result<TopNComputer<'a>, &'static str> {
         todo!();
     }
 }
